@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card { margin-top: 20px; }
+        .edit-btn, .delete-btn { cursor: pointer; }
+        .completed { text-decoration: line-through; }
+    </style>
+</head>
+<body>
+    <div class="card w-50 m-auto">
+        <div class="card-body">
+            <h5 class="card-title text-center">Card title</h5>
+            <div class="d-flex justify-content-between">
+                <input type="text" class="form-control mr-2" id="task_value">
+                <button class="btn btn-success" id="btn">Save</button>
+            </div>
+        </div>
+        <ol id="task_lists" class="list-group list-group-flush mt-2"></ol>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
     <script src="./index.js"></script>
 </body>
 </html>
